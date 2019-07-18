@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Player/Ninja PNG/css_sprites (1).png" type="Texture" id=2]
+[ext_resource path="res://Player/Ninja PNG/1024 pixel/Sword/SNinja_Atk 1.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Sword_Attack"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player_Sprite_Attack:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CP_Head_Attack:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( 452, 228, 414, 219, 431, 192, 413, 158, 447, 150, 437, 106, 488, 109, 497, 90, 541, 104, 547, 114, 560, 102, 577, 132, 580, 153, 591, 155, 593, 168, 585, 215, 580, 222, 567, 217, 570.095, 225.842, 554, 263, 540, 271, 519, 268, 505, 260, 492, 234, 460, 215, 453, 212 ), PoolVector2Array( 477.812, 219.291, 457.904, 183.457, 490.894, 170.943, 486.913, 126.008, 533.554, 133.402, 539.811, 110.65, 575.646, 120.32, 593.847, 133.971, 600.673, 120.889, 638.782, 175.494, 627.975, 242.612, 614.893, 238.062, 604.086, 285.272, 579.627, 292.666, 540, 271, 519, 268, 505, 260, 492, 234, 478.381, 247.731, 459.042, 237.493 ), PoolVector2Array( 477.812, 219.291, 457.904, 183.457, 490.894, 170.943, 486.913, 126.008, 533.554, 133.402, 539.811, 110.65, 575.646, 120.32, 593.847, 133.971, 600.673, 120.889, 638.782, 175.494, 627.975, 242.612, 614.893, 238.062, 604.086, 285.272, 579.627, 292.666, 540, 271, 519, 268, 505, 260, 492, 234, 478.381, 247.731, 459.042, 237.493 ), PoolVector2Array( 477.812, 219.291, 457.904, 183.457, 490.894, 170.943, 486.913, 126.008, 533.554, 133.402, 539.811, 110.65, 575.646, 120.32, 593.847, 133.971, 600.673, 120.889, 638.782, 175.494, 627.975, 242.612, 614.893, 238.062, 604.086, 285.272, 579.627, 292.666, 540, 271, 519, 268, 505, 260, 492, 234, 478.381, 247.731, 459.042, 237.493 ), PoolVector2Array( 477.812, 219.291, 457.904, 183.457, 490.894, 170.943, 486.913, 126.008, 533.554, 133.402, 539.811, 110.65, 575.646, 120.32, 593.847, 133.971, 600.673, 120.889, 638.782, 175.494, 627.975, 242.612, 614.893, 238.062, 604.086, 285.272, 579.627, 292.666, 540, 271, 519, 268, 505, 260, 492, 234, 478.381, 247.731, 459.042, 237.493 ), PoolVector2Array( 477.812, 219.291, 457.904, 183.457, 490.894, 170.943, 486.913, 126.008, 533.554, 133.402, 539.811, 110.65, 575.646, 120.32, 593.847, 133.971, 600.673, 120.889, 638.782, 175.494, 627.975, 242.612, 614.893, 238.062, 604.086, 285.272, 579.627, 292.666, 540, 271, 519, 268, 505, 260, 492, 234, 478.381, 247.731, 459.042, 237.493 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CP_Sword_Attack:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( 398.844, 387.778, 511.313, 324.56, 512.783, 315.739, 532.631, 311.328, 545.127, 328.235, 536.306, 332.646, 533.366, 339.997, 517.929, 339.262, 407.665, 403.215, 395.169, 402.479 ), PoolVector2Array( 649.51, 273.838, 768.595, 292.216, 777.416, 306.182, 759.039, 312.798, 643.63, 291.481 ), PoolVector2Array( 663.477, 235.614, 778.887, 214.296, 796.529, 217.971, 786.973, 230.468, 664.947, 251.786 ), PoolVector2Array( 671.563, 201.064, 787.708, 159.899, 800.204, 159.899, 791.383, 176.071, 673.768, 214.296 ), PoolVector2Array( 671.563, 201.064, 787.708, 159.899, 800.204, 159.899, 791.383, 176.071, 673.768, 214.296 ), PoolVector2Array( 671.563, 201.064, 787.708, 159.899, 800.204, 159.899, 791.383, 176.071, 673.768, 214.296 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 57.0209
+
+[node name="Player" type="Area2D"]
+gravity = 0.0
+script = ExtResource( 1 )
+
+[node name="Player_Sprite_Attack" type="Sprite" parent="."]
+position = Vector2( 488, 258.5 )
+scale = Vector2( 0.795019, 0.847744 )
+texture = ExtResource( 2 )
+vframes = 3
+hframes = 2
+frame = 5
+
+[node name="Player_Animation" type="AnimationPlayer" parent="."]
+playback_speed = 1.5
+anims/Sword_Attack = SubResource( 1 )
+anims/idle = SubResource( 2 )
+
+[node name="CP_Head_Attack" type="CollisionPolygon2D" parent="."]
+position = Vector2( 1.84399, 1.99998 )
+polygon = PoolVector2Array( 477.812, 219.291, 457.904, 183.457, 490.894, 170.943, 486.913, 126.008, 533.554, 133.402, 539.811, 110.65, 575.646, 120.32, 593.847, 133.971, 600.673, 120.889, 638.782, 175.494, 627.975, 242.612, 614.893, 238.062, 604.086, 285.272, 579.627, 292.666, 540, 271, 519, 268, 505, 260, 492, 234, 478.381, 247.731, 459.042, 237.493 )
+
+[node name="CP_Sword_Attack" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 671.563, 201.064, 787.708, 159.899, 800.204, 159.899, 791.383, 176.071, 673.768, 214.296 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2( 669.428, 305.781 )
+mass = 0.00102041
+gravity_scale = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SNinja_Atk 1" type="Sprite" parent="RigidBody2D"]
+position = Vector2( 124.289, -112.235 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2( 132.788, -141.792 )
+shape = SubResource( 3 )
+[connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]
